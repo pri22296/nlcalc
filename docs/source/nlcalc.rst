@@ -1,10 +1,6 @@
 nlcalc package
 ==============
 
-
-Module contents
----------------
-
 .. automodule:: nlcalc
     :members:
     :undoc-members:

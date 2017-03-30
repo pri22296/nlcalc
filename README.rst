@@ -39,6 +39,13 @@ Installation
 Links
 **************************************************************************
 
+* `Documentation <http://nlcalc.readthedocs.io/en/latest/>`_
+
+* `Source <https://github.com/pri22296/nlcalc>`_
+
+* `API Reference <http://nlcalc.readthedocs.io/en/latest/source/nlcalc.html#module-nlcalc>`_
+
+
 .. inclusion-marker-links-end
 
 
@@ -48,7 +55,7 @@ Links
 License
 **************************************************************************
 
-This project is licensed under the MIT License - see the `LICENSE.txt <https://github.com/pri22296/botify-calc/blob/master/LICENSE.txt>`_ file for details.
+This project is licensed under the MIT License - see the `LICENSE.txt <https://github.com/pri22296/nlcalc/blob/master/LICENSE.txt>`_ file for details.
 
 
 .. inclusion-marker-license-end

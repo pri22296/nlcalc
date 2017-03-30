@@ -1,9 +1,8 @@
 from botify import NLParser
 from nlcalc.context import *
-from nlcalc.utils import is_numeric, convert_to_numeric
-
+from nlcalc.utils import is_numeric, convert_to_numeric, text2int
+    
 class NLCalculator:
-
     def __init__(self):
         self._parser = NLParser(is_token_data_callback=is_numeric,
                                 clean_data_callback=convert_to_numeric)
@@ -89,7 +88,7 @@ class NLCalculator:
                                action='delete', params=(-2,), relative_pos=-2)
 
     def calculate(self, text):
-        res = self._parser.parse(text)
+        res = self._parser.parse(text2int(text))
         if len(res) == 1:
             return res[0]
         else:
