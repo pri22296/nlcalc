@@ -2,7 +2,7 @@ from setuptools import setup
 
 _version = '0.1.0'
 
-install_requires = []
+install_requires = ['botify']
 
 setup(name='nlcalc',
       version=_version,
