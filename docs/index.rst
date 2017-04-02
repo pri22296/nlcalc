@@ -8,20 +8,12 @@ Welcome to nlcalc's documentation!
 ##########################################
 
 .. include:: introduction.rst
+
+.. include:: usage.rst
+
+.. include:: install.rst
    
 .. include:: links.rst
-
-
-******************************************
-Contents
-******************************************
-
-.. toctree::
-   :maxdepth: 2
-   
-   install
-   quickstart
-
 
 
 Indices and tables

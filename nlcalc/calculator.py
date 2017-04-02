@@ -9,17 +9,6 @@ class NLCalculator:
     This class can be used to parse mathematical statements in natural
     language.
 
-    Example
-    -------
-    >>> from nlcalc import NLCalculator
-    >>> my_calc = NLCalculator()
-    >>> result = my_calc.calculate("what is two plus twenty five")
-    >>> print(result)
-    27
-    >>> result = my_calc.calculate("3 square plus four square")
-    >>> print(result)
-    25
-
     Attributes
     ----------
     strict_mode_enabled

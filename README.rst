@@ -1,5 +1,5 @@
 ######################################################################################
-A Extensible Natural Language Mathematical Calculator
+Natural Language Mathematical Calculator
 ######################################################################################
 
 
@@ -9,14 +9,43 @@ A Extensible Natural Language Mathematical Calculator
 Introduction
 **************************************************************************
 
+.. image:: https://api.codacy.com/project/badge/Grade/0ad006a377474ddcb251dc94418d48a2 
+    :target: https://www.codacy.com/app/pri22296/nlcalc?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=pri22296/nlcalc&amp;utm_campaign=Badge_Grade
+
+.. image:: https://landscape.io/github/pri22296/nlcalc/master/landscape.svg?style=flat
+    :target: https://landscape.io/github/pri22296/nlcalc/master
+    :alt: Code Health
+   
+.. image:: https://readthedocs.org/projects/nlcalc/badge/?version=latest
+    :target: http://nlcalc.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
 This Package is an example project for the botify framework. It can be
 used to parse mathematical expressions expressed in natural language.
 The calculator can be extended to support any number of features as
-it is developed using the botify framework.
-  
-  
+it is developed using the `botify <https://github.com/pri22296/botify>`_
+framework.
+
 .. inclusion-marker-introduction-end
 
+.. inclusion-marker-usage-start
+
+**************************************************************************
+Usage
+**************************************************************************
+
+.. code:: python
+
+    >>> from nlcalc import NLCalculator
+    >>> my_calc = NLCalculator()
+    >>> result = my_calc.calculate("what is two plus twenty five")
+    >>> print(result)
+    27
+    >>> result = my_calc.calculate("3 square plus four square")
+    >>> print(result)
+    25
+
+.. inclusion-marker-usage-end
 
 
 .. inclusion-marker-install-start
