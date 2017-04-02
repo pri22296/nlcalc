@@ -9,6 +9,9 @@ Natural Language Mathematical Calculator
 Introduction
 **************************************************************************
 
+.. image:: https://badge.fury.io/py/nlcalc.svg
+    :target: https://badge.fury.io/py/nlcalc
+
 .. image:: https://api.codacy.com/project/badge/Grade/0ad006a377474ddcb251dc94418d48a2 
     :target: https://www.codacy.com/app/pri22296/nlcalc?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=pri22296/nlcalc&amp;utm_campaign=Badge_Grade
 
@@ -20,11 +23,10 @@ Introduction
     :target: http://nlcalc.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
-This Package is an example project for the botify framework. It can be
-used to parse mathematical expressions expressed in natural language.
-The calculator can be extended to support any number of features as
-it is developed using the `botify <https://github.com/pri22296/botify>`_
-framework.
+This Package is an example project for the
+`botify <https://github.com/pri22296/botify>`_ framework. It can be
+used to parse mathematical expressions expressed in natural language
+and evaluate the result.
 
 .. inclusion-marker-introduction-end
 
