@@ -1,17 +1,5 @@
 import math
 
-# To Add a support for a new operation
-# Write the appropriate function here
-# and add it in the _OpKeyWords dictionary with a suitable priority
-# and suitable keywords
-# also add a rule set in _OpRuleSets 
-
-# for special rules add an extra elif condition in parse method
-# however it is highly discouraged
-    
-def add(arg0, arg1):
-    return arg0 + arg1
-
 def add(arg0, arg1):
     return arg0 + arg1
 

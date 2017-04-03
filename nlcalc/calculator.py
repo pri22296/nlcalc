@@ -27,7 +27,6 @@ class NLCalculator:
     @strict_mode_enabled.setter
     def strict_mode_enabled(self, value):
         self._parser.strict_mode_enabled = value
-        
 
     def _init_tasks(self):
         # Addition
