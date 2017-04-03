@@ -44,7 +44,7 @@ def text2int(textnum, numwords={}):
     flag = 0
     current = result = 0
     for word in textnum.split():
-        if word not in numwords:
+        if word not in numwords or (word == 'and' and current==0):
             if flag == 1:
                 final_text.append(str(result + current))
                 current = result = 0
@@ -62,4 +62,5 @@ def text2int(textnum, numwords={}):
         final_text.append(str(result + current))
 
     return " ".join(final_text)
+
 

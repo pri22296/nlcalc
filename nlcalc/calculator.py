@@ -31,7 +31,7 @@ class NLCalculator:
     def _init_tasks(self):
         # Addition
         self._parser.add_task(keywords=('sum', 'summation', 'add',
-                                        'additon', 'total'),
+                                        'addition', 'total'),
                               context=CONTEXT_SUM,
                               rule=(1, 2))
         self._parser.add_task(keywords=('added',),
@@ -132,7 +132,7 @@ class NLCalculator:
                                   parameter=(2, 1))
         self._parser.add_modifier(modifier='from',
                                   keywords=('subtracted',),
-                                  relative_pos=-2,
+                                  relative_pos=-1,
                                   action=Botify.ACTION_UPDATE_RULE,
                                   parameter=(1, -1))
         self._parser.add_modifier(modifier='root',
