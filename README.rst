@@ -11,6 +11,9 @@ Introduction
 
 .. image:: https://badge.fury.io/py/nlcalc.svg
     :target: https://badge.fury.io/py/nlcalc
+    
+.. image:: https://travis-ci.org/pri22296/nlcalc.svg?branch=master
+    :target: https://travis-ci.org/pri22296/nlcalc
 
 .. image:: https://api.codacy.com/project/badge/Grade/0ad006a377474ddcb251dc94418d48a2 
     :target: https://www.codacy.com/app/pri22296/nlcalc?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=pri22296/nlcalc&amp;utm_campaign=Badge_Grade
