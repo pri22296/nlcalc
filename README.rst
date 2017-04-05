@@ -2,12 +2,7 @@
 Natural Language Mathematical Calculator
 ######################################################################################
 
-
-.. inclusion-marker-introduction-start
-
-**************************************************************************
-Introduction
-**************************************************************************
+.. inclusion-marker-badges-start
 
 .. image:: https://badge.fury.io/py/nlcalc.svg
     :target: https://badge.fury.io/py/nlcalc
@@ -25,6 +20,15 @@ Introduction
 .. image:: https://readthedocs.org/projects/nlcalc/badge/?version=latest
     :target: http://nlcalc.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
+
+.. inclusion-marker-badges-end
+
+
+.. inclusion-marker-introduction-start
+
+**************************************************************************
+Introduction
+**************************************************************************
 
 This Package is an example project for the
 `botify <https://github.com/pri22296/botify>`_ framework. It can be

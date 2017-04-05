@@ -43,8 +43,9 @@ def text2int(textnum, numwords={}):
     final_text = []
     flag = 0
     current = result = 0
+    scale = 1
     for word in textnum.split():
-        if word not in numwords or (word == 'and' and current==0):
+        if word not in numwords or (word == 'and' and scale == 1):
             if flag == 1:
                 final_text.append(str(result + current))
                 current = result = 0

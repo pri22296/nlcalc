@@ -4,6 +4,7 @@ from nlcalc.utils import is_numeric, convert_to_numeric, text2int
 
 
 class NaturalLanguageQueryTestCase(unittest.TestCase):
+
     def setUp(self):
         self.calculator = NLCalculator()
 
@@ -156,14 +157,15 @@ class NaturalLanguageQueryTestCase(unittest.TestCase):
 
     def test_invalid_type1(self):
         with self.assertRaises(ValueError):
-            result = self.calculator.calculate('who are you')
+            self.calculator.calculate('who are you')
 
     def test_invalid_type2(self):
         with self.assertRaises(ValueError):
-            result = self.calculator.calculate('2 and 3')
+            self.calculator.calculate('2 and 3')
 
 
 class IsNumericTestCase(unittest.TestCase):
+
     def test_integer(self):
         self.assertTrue(is_numeric('5'))
 
@@ -175,6 +177,7 @@ class IsNumericTestCase(unittest.TestCase):
 
 
 class Convert2NumericTestCase(unittest.TestCase):
+
     def test_integer(self):
         result = convert_to_numeric('5')
         self.assertEqual(result, 5)
@@ -186,7 +189,29 @@ class Convert2NumericTestCase(unittest.TestCase):
 
     def test_non_numeric(self):
         with self.assertRaises(ValueError):
-            result = convert_to_numeric('hello')
+            convert_to_numeric('hello')
+
+class Text2IntTestCase(unittest.TestCase):
+
+    def test_no_number(self):
+        result = text2int('what is up')
+        self.assertEqual(result , 'what is up')
+
+    def test_simple_number(self):
+        result = text2int('what is five plus three')
+        self.assertEqual(result, 'what is 5 plus 3')
+
+    def test_big_number(self):
+        result = text2int('fifty six thousand birds')
+        self.assertEqual(result, '56000 birds')
+
+    def test_with_and(self):
+        result = text2int('five and two')
+        self.assertEqual(result, '5 and 2')
+
+    def test_with_and_in_number(self):
+        result = text2int('five hundred and two birds')
+        self.assertEqual(result, '502 birds')
 
 
 if __name__ == '__main__':

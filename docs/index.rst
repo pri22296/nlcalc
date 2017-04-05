@@ -7,6 +7,8 @@
 Welcome to nlcalc's documentation!
 ##########################################
 
+.. include:: badges.rst
+
 .. include:: introduction.rst
 
 .. include:: usage.rst
