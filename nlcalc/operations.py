@@ -1,3 +1,4 @@
+from __future__ import division
 import math
 
 def add(arg0, arg1):
