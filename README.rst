@@ -6,7 +6,10 @@ Natural Language Mathematical Calculator
 
 .. image:: https://badge.fury.io/py/nlcalc.svg
     :target: https://badge.fury.io/py/nlcalc
-    
+
+.. image:: https://coveralls.io/repos/github/pri22296/nlcalc/badge.svg?branch=master
+    :target: https://coveralls.io/github/pri22296/nlcalc?branch=master
+
 .. image:: https://travis-ci.org/pri22296/nlcalc.svg?branch=master
     :target: https://travis-ci.org/pri22296/nlcalc
 
