@@ -17,7 +17,17 @@ install:
 
 script:
     - coverage run test.py
-    
+
 after_success:
     - coveralls
 
+deploy:
+  provider: pypi
+  distributions: sdist bdist_wheel
+  user: pri22296
+  password:
+    secure: jYhligoeokFlNL+gorb2HuHJKUTu8wsVDy9bhv5IRnr5uADFtYr1FiGtCv2GoWxwWqnzG5J9LX0X8Ud9V1y2thyaBnn94VQCDxre1MOU0jtsnu26Ke8goYvwrLrv6Ra728yWJP8nC4xptXGR6Mw33rlXa3Ro+PHGOjbvC//VBsV8LqxzrFE6yi5zgxVNZn2f59wH1pRcupW3IOWE4q7xth6W/YxFurVBvVTu9U/VqVyrk3J0NBbBMKdmuxgjlW6fP+KOCZIFMJ5o+6ZJ36Y08yzWpULdbuo6CsfnPaYnrcGJyAPrgY/ky597xxA6jHWfCp1Bk/otTsCtVwlxPJDl70i9TBwInrebQKZW7AkmD/6tUyAg+z8szTpITcecDuo4bsdmAdfUhjDjKFxYJGBXpr9+gMWA4Jdw1HHV6eYwm2RHPloxfMTKrzW8rLGZZ7gUgPkffr9KXziXSXVDR6MCevVOOmaSdWySJWno8cY5TtR0tKE5X3eUM3k8DH5ml+k4UDEqsNvpA4tfV6WiwST6YbdOkdC3wj2pDZoFmQc4mnU/ET79nLj777lwbTCUAansCrJptkZmHXhIMF4oReUWrpsFtxIqs3tOXp2HxcARwAH3/z6yhGqVFuKAu7UaPSQVLiOgftD0DdklXrDhTcJ4n5CXUaSSoHeseFgWz10jetE=
+  on:
+    tags: true
+    repo: pri22296/nlcalc
+    python: '3.6'
